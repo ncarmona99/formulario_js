@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="validaciones_form.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Formulario</legend>
+            <form action="" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <label for="rut">Rut</label>
+                    <input type="text" id='rut'>
+                </div><br>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id='nombre'>
+                </div><br>
+                <div>
+                    <label for="appaterno">Apellido Paterno</label>
+                    <input type="text" id='appaterno'>
+                </div><br>
+                <div>
+                    <label for="apmaterno">Apellido Materno</label>
+                    <input type="text" id='apmaterno'>
+                </div><br>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" id='edad'>
+                </div><br>
+                <div>
+                    <label for="genero">Género</label>
+                    <select id="genero" name="genero">
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                        <option value="3">Otro</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="celular">Celular (+56)</label>
+                    <input type="number" id='celular'>
+                </div><br>
+                <input type="submit" onclick = 'enviarFormulario()' value="Enviar Formulario">
+                <div>
+                    <label for="carta">Carta de presentación</label><br>
+                    <textarea cols="50" rows="10" id='carta'></textarea><br>
+                    <input type="submit" onclick = 'enviarCarta()' value="Enviar Carta">
+                </div>
+            </form>
+        </fieldset>
+    </body>
+</html>
